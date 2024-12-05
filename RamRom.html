@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorias Ram e Rom</title>
+    <style>
+        body {
+            position: relative; /* Torna o body o contêiner principal para o overlay */
+            background-image: url("https://tse3.mm.bing.net/th?id=OIP.h_0M6uT4vhCAFBiTYtwvzAHaE7&pid=Api&P=0&h=220");
+            background-size: cover; /* Ajusta a imagem para cobrir a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0; /* Remove margens padrão */
+            min-height: 100vh; /* Garante altura mínima de 100% da tela */
+            background-attachment: fixed; /* Fixa o fundo para dar efeito de rolagem */
+            color: rgb(3, 0, 0); /* Define uma cor padrão para o texto */
+        }
+    
+        body::before {
+            content: ""; /* Necessário para pseudoelementos */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.514); /* Fundo preto com maior opacidade */
+            z-index: 0; /* Coloca o overlay atrás do conteúdo */
+        }
+    
+        h1 {
+            color: rgb(0, 255, 234);
+            position: relative; /* Mantém o texto acima da camada escura */
+            z-index: 1; /* Garante que o texto fique visível acima do overlay */
+        }
+    
+        h2 {
+            color: rgb(0, 255, 0);
+            position: relative; /* Mantém o texto acima da camada escura */
+            z-index: 1; /* Garante que o texto fique visível acima do overlay */
+        }
+    
+        h3 {
+            color: rgb(255, 0, 0);
+            position: relative; /* Mantém o texto acima da camada escura */
+            z-index: 1; /* Garante que o texto fique visível acima do overlay */
+        }
+    
+        li {
+            color: rgb(251, 255, 0);
+            position: relative; /* Mantém o texto acima da camada escura */
+            z-index: 1; /* Garante que o texto fique visível acima do overlay */
+        }
+    
+        p {
+            position: relative; /* Mantém os parágrafos acima da camada escura */
+            z-index: 1; /* Garante que o texto fique visível acima do overlay */
+        }
+    
+            table {
+                position: relative; /* Torna a tabela posicionável */
+                z-index: 1; /* Garante que a tabela fique acima do overlay */
+                margin: 20px auto; /* Centraliza a tabela horizontalmente */
+                border-collapse: collapse; /* Remove espaçamento entre bordas */
+                width: 80%; /* Define a largura da tabela */
+                font-family: 'Courier New', Courier, monospace; /* Fonte da tabela */
+                background-color: rgb(255, 255, 255); /* Fundo branco semitransparente */
+                box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.884); /* Adiciona um leve sombreado */
+            }
+            
+    
+        th, td {
+            color: rgb(0, 132, 255);
+            border: 1px solid #0084ff;
+            padding: 12px;
+            text-align: center;
+            font-family: 'Verdana', sans-serif; /* Defina a fonte da tabela, se necessário */
+            z-index: 1
+        }
+    
+        th {
+            background-color: #00a2ff;
+            color: white;
+            z-index: 1
+        }
+    
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+            z-index: 1
+        }
+    
+        tr:hover {
+            background-color: #ffffff;
+            z-index: 1
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Memoria RAM e ROM</h1>
+    <h3>As memórias RAM e ROM desempenham papéis fundamentais no funcionamento de dispositivos eletrônicos, especialmente computadores e smartphones. Embora ambas sejam tipos de memória, elas possuem características, funções e tecnologias distintas.</h3>
+
+    <h2>O que é a memória RAM?</h2>
+    <h3>RAM (Random Access Memory) é um tipo de memória volátil usada para armazenar dados temporários que o processador precisa acessar rapidamente enquanto o computador ou dispositivo está em funcionamento.</h3>
+
+    <h2>Características da RAM:</h2>
+    <li><strong>Volátil:</strong> Todos os dados armazenados na RAM são perdidos quando o dispositivo é desligado.</li>
+    <li><strong>Alta velocidade:</strong> A RAM é muito mais rápida do que outros tipos de memória (como discos rígidos ou SSDs).</li>
+    <li><strong>Acessível aleatoriamente:</strong> O processador pode acessar qualquer local na RAM diretamente, sem precisar seguir uma sequência.</li>
+
+    <h2>Função da RAM:</h2>
+    <li>Armazena informações temporárias, como programas abertos, dados em uso e partes do sistema operacional.</li>
+    <li>Serve como uma área de trabalho temporária para o processador realizar cálculos e executar comandos.</li>
+
+    <h2>Tipos de RAM:</h2>
+    <li><strong>DRAM (Dynamic RAM):</strong> É o tipo mais comum em computadores e precisa ser constantemente atualizado para reter dados.</li>
+    <li><strong>SRAM (Static RAM):</strong> Mais rápida e mais cara, usada em cache de processadores.</li>
+    <li><strong>DDR (Double Data Rate):</strong> Subtipo de DRAM, usado em PCs e laptops. Evoluiu em gerações:</li>
+    <li>DDR1, DDR2, DDR3, DDR4 e agora DDR5, com velocidades e capacidades cada vez maiores.</li>
+
+    <h2>Capacidade e impacto no desempenho:</h2>
+    <h3>Mais RAM permite que o sistema execute mais programas simultaneamente e manipule grandes volumes de dados sem ficar lento. É essencial para multitarefa e jogos.</h3>
+
+    <h2>O que é a memória ROM?</h2>
+    <h3>ROM (Read-Only Memory) é um tipo de memória não volátil que armazena dados permanentemente, mesmo quando o dispositivo está desligado.</h3>
+
+    <h2>Características da ROM:</h2>
+    <li><strong>Não volátil:</strong> Retém os dados mesmo sem energia elétrica.</li>
+    <li><strong>Somente leitura (originalmente):</strong> Os dados na ROM geralmente não podem ser alterados ou são difíceis de modificar.</li>
+    <li>Lenta em comparação com a RAM.</li>
+
+    <h2>Função da ROM:</h2>
+    <li>Armazena informações essenciais e permanentes, como o firmware (software básico que permite a inicialização do dispositivo).</li>
+    <li>Contém instruções que não mudam, como o programa inicial de carregamento do sistema operacional (exemplo: BIOS/UEFI).</li>
+
+    <h2>Tipos de ROM:</h2>
+    <li><strong>PROM (Programmable ROM):</strong> Pode ser programada uma única vez após a fabricação.</li>
+    <li><strong>EPROM (Erasable Programmable ROM):</strong> Pode ser apagada e reprogramada usando luz ultravioleta.</li>
+    <li><strong>EEPROM (Electrically Erasable Programmable ROM):</strong> Pode ser apagada e reprogramada eletricamente. Usada em dispositivos como microcontroladores.</li>
+    <li><strong>Flash Memory:</strong> Um tipo moderno de EEPROM usado em pendrives, SSDs e cartões de memória.</li>
+
+    <h2>Exemplos de uso da ROM:</h2>
+    <li>BIOS ou UEFI em computadores.</li>
+    <li>Firmware de dispositivos eletrônicos.</li>
+    <li>Controladores de hardware (como impressoras ou roteadores).</li>
+
+    <h2>Comparação: RAM vs ROM</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Característica</th>
+                <th>RAM</th>
+                <th>ROM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Volatilidade</td>
+                <td>Volátil (perde dados ao desligar)</td>
+                <td>Não volátil (retém dados mesmo sem energia)</td>
+            </tr>
+            <tr>
+                <td>Velocidade</td>
+                <td>Muito rápida</td>
+                <td>Mais lenta em comparação</td>
+            </tr>
+            <tr>
+                <td>Usabilidade</td>
+                <td>Armazena dados temporários e em uso pelo sistema</td>
+                <td>Armazena dados permanentes, como firmware</td>
+            </tr>
+            <tr>
+                <td>Capacidade de edição</td>
+                <td>Totalmente editável durante o uso do sistema</td>
+                <td>Geralmente não pode ser editada ou é difícil de modificar</td>
+            </tr>
+            <tr>
+                <td>Exemplos de uso</td>
+                <td>Programas abertos, execução de tarefas</td>
+                <td>Instruções de inicialização, firmware</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Convivência entre RAM e ROM</h2>
+    <li><strong>ROM inicializa o sistema:</strong> Quando o computador ou dispositivo é ligado, a ROM fornece as instruções básicas para carregar o sistema operacional na RAM.</li>
+    <li><strong>RAM executa os programas:</strong> Após o sistema estar funcionando, a RAM armazena dados temporários e ajuda o processador a realizar operações em alta velocidade.</li>
+
+
+</body>
+</html>

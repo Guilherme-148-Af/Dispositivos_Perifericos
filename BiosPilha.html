@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função da Bios e da Pilha, Memorias ROM e RAM</title>
+</head>
+<style>
+    body {
+        position: relative; /* Torna o body o contêiner principal para o overlay */
+        background-image: url("https://tse2.mm.bing.net/th?id=OIP.dKtYkv2iL-qeZLiQyeIlCgHaEK&pid=Api&P=0&h=220");
+        background-size: cover; /* Ajusta a imagem para cobrir a tela */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0; /* Remove margens padrão */
+        min-height: 100vh; /* Garante altura mínima de 100% da tela */
+        background-attachment: fixed; /* Fixa o fundo para dar efeito de rolagem */
+        color: rgb(3, 0, 0); /* Define uma cor padrão para o texto */
+    }
+    body::before {
+        content: ""; /* Necessário para pseudoelementos */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.514); /* Fundo preto com maior opacidade */
+        z-index: 0; /* Coloca o overlay atrás do conteúdo */
+    }
+    h1 {
+        color: rgb(0, 255, 234);
+        position: relative; /* Mantém o texto acima da camada escura */
+        z-index: 1; /* Garante que o texto fique visível acima do overlay */
+    }
+    h2 {
+        color: rgb(255, 255, 255);
+        position: relative; /* Mantém o texto acima da camada escura */
+        z-index: 1; /* Garante que o texto fique visível acima do overlay */
+    }
+    h3 {
+        color: rgb(255, 0, 0);
+        position: relative; /* Mantém o texto acima da camada escura */
+        z-index: 1; /* Garante que o texto fique visível acima do overlay */
+    }
+    li {
+        color: rgb(0, 255, 42);
+        position: relative; /* Mantém o texto acima da camada escura */
+        z-index: 1; /* Garante que o texto fique visível acima do overlay */
+    }
+
+</style>
+<body>
+    <h1>Função da Bios e da Pilha</h1>
+    <h2>O que é a Bios?</h2>
+    <h3>A BIOS (Basic Input/Output System, ou Sistema Básico de Entrada e Saída) é um software de baixo nível que está presente em muitos computadores. Ela é armazenada em um chip na placa-mãe e é responsável por inicializar o hardware do sistema e carregar o sistema operacional.</h3>
+
+    <h2>Qual é a Função Principal da Bios?</h2>
+    <h3>A BIOS atua como intermediária entre o hardware e o sistema operacional. Suas responsabilidades incluem:</h3>
+
+    <li><strong>Inicialização do hardware:</strong> Verifica e configura os componentes do sistema, como CPU, RAM, disco rígido, teclado, mouse e placas de vídeo, antes de carregar o sistema operacional.</li>
+    <li><strong>POST (Power-On Self Test):</strong> Um teste inicial para garantir que o hardware está funcionando corretamente ao ligar o computador.</li>
+    <li><strong>Carregamento do sistema operacional:</strong> A BIOS localiza o carregador de inicialização (boot loader) no disco de armazenamento para iniciar o sistema operacional.</li>
+    <li><strong>Configurações do sistema:</strong> Permite ajustar configurações de hardware, como ordem de boot, frequência da CPU e ativar/desativar dispositivos.</li>
+
+    <h2>Como Acessar a Bios?</h2>
+    <h3>Você pode acessar a BIOS pressionando uma tecla específica durante o boot do sistema (antes do sistema operacional carregar). Essa tecla varia dependendo do fabricante e geralmente é:</h3>
+
+    <li>F2</li>
+    <li>Del</li>
+    <li>Esc</li>
+    <li>F10</li>
+
+    <h3>Ao acessar a BIOS, você pode ajustar configurações avançadas de hardware.</h3>
+
+    <h2>Evolução da BIOS</h2>
+    <h3>Com o tempo, a BIOS foi sendo substituída por tecnologias mais modernas, como a UEFI (Unified Extensible Firmware Interface). A UEFI oferece:</h3>
+
+    <li>Interface gráfica e suporte a mouse.</li>
+    <li>Suporte para discos maiores (acima de 2 TB).</li>
+    <li>Inicialização mais rápida e mais segurança.</li>
+
+    <h2>Funções Avançadas</h2>
+
+    <li><strong>Overclocking:</strong> Ajustar a velocidade do processador ou da memória.</li>
+    <li><strong>Configuração de dispositivos:</strong> Ativar ou desativar portas USB, áudio, Wi-Fi, etc.</li>
+    <li><strong>Configuração de segurança:</strong> Definir senhas para o sistema ou habilitar/desabilitar o Secure Boot (inicialização segura).</li>
+
+    <h2>Importância da BIOS</h2>
+    <h3>Sem a BIOS, o computador não seria capaz de inicializar, pois ela é o software fundamental que conecta o hardware ao sistema operacional.</h3>
+    
+    <h2>Para que serve a pilha na placa mãe.</h2> 
+    <h3>A pilha da placa-mãe (geralmente uma pilha de lítio do tipo CR2032) tem uma função essencial para o funcionamento do computador. Ela alimenta um componente chamado CMOS (Complementary Metal-Oxide-Semiconductor), que é responsável por armazenar certas configurações básicas do sistema, mesmo quando o computador está desligado.</h3>
+    
+    <h2>Funções da pilha na placa-mãe:</h2>
+    <h3>Manter a configuração da BIOS ativa:</h3>
+
+    <li>A pilha alimenta o CMOS para que ele guarde configurações importantes, como:</li>
+        <li>Data e hora.</li>
+        <li>Ordem de boot (dispositivos que serão verificados ao ligar o computador).</li>
+        <li>Configurações de hardware, como frequência de memória, CPU e voltagens.</li>
+    <li>Sem a pilha, essas configurações são perdidas ao desligar o computador, voltando aos valores padrão.</li>   
+
+    <h3>Preservar a data e a hora:</h3>
+
+    <li>A pilha mantém o relógio interno do sistema funcionando corretamente.</li>
+    <li>Sem ela, o relógio é reiniciado toda vez que o computador é desligado, geralmente voltando para uma data de fábrica (como 01/01/2000).</li>
+   
+    <h3>Evitar problemas no funcionamento geral:</h3>
+
+    <li>Uma pilha descarregada pode causar mensagens de erro ao iniciar o computador, como:</li>
+        <li>"CMOS Checksum Error."</li>
+        <li>"Date and Time Not Set."</li>
+    <li>Também pode afetar o desempenho ou impedir que o sistema operacional seja carregado corretamente.</li>
+
+    <h2>Quando trocar a pilha da placa-mãe?</h2>
+
+    <li>A pilha da placa-mãe geralmente dura 3 a 5 anos, dependendo do uso do computador.</li>
+    <li>Sinais de que é hora de trocar:</li>
+        <li>O relógio do sistema é reiniciado frequentemente.</li>
+        <li>Mensagens de erro sobre CMOS ou BIOS aparecem na inicialização.</li>
+        <li>Configurações da BIOS não são salvas.</li>
+    
+    <h3>Trocar a pilha é simples: basta localizar o compartimento da pilha na placa-mãe, retirar a antiga e inserir a nova, observando a polaridade (geralmente o lado positivo + para cima)</h3>
+
+    <h2>O que acontece se a pilha estiver descarregada?</h2>
+
+    <li>O computador ainda funcionará, mas:</li>
+        <li>Perderá as configurações da BIOS e precisará reconfigurá-las sempre que for ligado.</li>
+        <li>Data e hora ficarão incorretas, o que pode causar problemas em sistemas que dependem de horários corretos (como navegadores ou atualizações).</li>
+    
+    
+</body>
+</html>
