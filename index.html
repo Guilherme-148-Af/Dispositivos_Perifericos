@@ -1,99 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memórias RAM e ROM, Funções da Bios e da Pilha, Periféricos e Convenções UHFI do teclado</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portefólio de Trabalhos</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<style>
-    body {
-        position: relative; 
-        background-image: url("https://i.gifer.com/origin/71/71a32055ba174b23a7279ec84d4c44db_w200.webp");
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0; 
-        min-height: 100vh; 
-        background-attachment: fixed; 
-        color: rgb(3, 0, 0); 
-    }
-
-    .card {
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 400px;  /* Aumentei a largura */
-        height: 150px; /* Aumentei a altura */
-        margin: 20px;
-        padding: 20px;
-        border-radius: 10px;
-        position: relative;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;  /* Centraliza o conteúdo verticalmente */
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        color: rgb(0, 255, 234);
-        position: relative;
-        z-index: 1;
-        background-color: rgba(0, 0, 0, 0.7); 
-        padding: 20px; 
-        border-radius: 10px; 
-        margin: 20px auto; 
-        display: inline-block; 
-    }
-
-    h2 {
-        color: rgb(255, 255, 255);
-        position: relative; 
-        z-index: 1;
-    }
-
-    a {
-        color: rgb(0, 255, 234);
-        text-decoration: none;
-    }
-
-    /* Estilo para telas menores */
-    @media (max-width: 768px) {
-        .card {
-            width: 90%;  /* Ajusta a largura dos cards para telas menores */
-            height: 120px;  /* Ajusta a altura para telas menores */
-        }
-    }
-
-</style>
 <body>
-    <h1>Aqui está o meu trabalho relacionado as Memórias RAM e ROM, funções da Bios e da Pilha, Periféricos e Convenções UHFI do teclado</h1>
-    <div class="container">
-        <div class="card">
-            <h2>Memória RAM e ROM</h2>
-            <a href="/RamRom.html"><strong>Saiba mais</strong></a>
-        </div>
+  <header>
+    <h1>Dispositivos e Periféricos</h1>
+    <p>Escolhe um dos temas abaixo para explorar conteúdos educativos interativos.</p>
+  </header>
 
-        <div class="card">
-            <h2>Funções da Bios e da Pilha</h2>
-            <a href="/BiosPilha.html"><strong>Saiba mais</strong></a>
-        </div>
-
-        <div class="card">
-            <h2>Periféricos</h2>
-            <a href="/Perifericos.html"><strong>Saiba mais</strong></a>
-        </div>
-
-        <div class="card">
-            <h2>Convenções UHFI do teclado</h2>
-            <a href="/Teclado.html"><strong>Saiba mais</strong></a>
-        </div>
+  <main class="card-container">
+    <div class="card" onclick="abrirTrabalho('perifericos.html')">
+      <i class="fa-solid fa-computer icon"></i>
+      <h2>Periféricos de Computador</h2>
+      <p>Descobre os tipos de periféricos (entrada, saída e mistos) e com imagens.</p>
+      <button>Abrir</button>
     </div>
+
+    <div class="card" onclick="abrirTrabalho('teclado_uhfi.html')">
+      <i class="fa-solid fa-keyboard icon"></i>
+      <h2>Teclado - Convenções UHFI</h2>
+      <p>Explora os tipos de layout de teclado, funcionalidades e atalhos mais usados.</p>
+      <button>Abrir</button>
+    </div>
+
 </body>
 </html>

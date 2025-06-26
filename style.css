@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url("https://t4.ftcdn.net/jpg/11/57/58/03/360_F_1157580352_fmEPEV2b9mQmqqW5rcd9dQfB98QPz1mz.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  padding: 3rem;
+  position: relative;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #00d9ff;
+  border-radius: 14px;
+  padding: 2.5rem 2rem;
+  width: 380px;
+  min-height: 300px;
+  text-align: center;
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin: 1.2rem 0 1rem;
+  color: #00ffcc;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #dddddd;
+  margin-bottom: 1.5rem;
+}
+
+.card button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.05rem;
+  background-color: #00ccee;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card button:hover {
+  background-color: #00ffff;
+}
+
+.icon {
+  font-size: 3.2rem;
+  color: #00ffff;
+  margin-bottom: 0.8rem;
+}
