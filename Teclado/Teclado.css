@@ -96,3 +96,20 @@ h1 i {
   margin-right: 8px;
   color: #00ffff;
 }
+
+.botao-voltar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px 0 40px 0;
+}
+
+.botao-voltar:hover {
+  background-color: #0056b3;
+}
+

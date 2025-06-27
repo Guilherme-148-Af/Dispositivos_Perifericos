@@ -17,3 +17,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     showSlide();
   });
 });
+
+function voltarParaInicio() {
+  window.location.href = "/index.html"; // Caminho relativo à pasta do ficheiro atual
+}
